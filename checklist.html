@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Content Checklist — Roni Margolin</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="brand-block">
+      <img src="assets/wordmark.svg" alt="Roni Margolin" class="wordmark">
+      <span class="brand-tagline">Brand &amp; Web Design</span>
+    </div>
+    <span class="project-tag">{{ProjectName}}</span>
+  </header>
+
+  <nav class="nav-back">
+    <a href="questionnaire.html" class="back-link">← Back to questionnaire</a>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <!-- Hero -->
+      <section class="hero">
+        <span class="eyebrow">Step 2 of 3</span>
+        <h1 class="heading">Content Checklist</h1>
+        <p class="lead">Everything I need from you before design begins. Gather what you have now. We can discuss any gaps together.</p>
+        <div class="progress"><div class="progress-fill" data-step="2"></div></div>
+      </section>
+
+      <!-- Drive folder CTA -->
+      <div class="drive-cta">
+        <div class="drive-cta-text">
+          <span class="label-section" style="margin-bottom: 4px;">Your Shared Folder</span>
+          <p>Upload everything below straight to your project folder. Both of us see what is there in real time.</p>
+        </div>
+        <a href="{{DriveFolderURL}}" target="_blank" rel="noopener" class="btn btn-dark btn-lg">Open shared folder →</a>
+      </div>
+
+      <!-- Legend -->
+      <div class="checklist-legend">
+        <div class="legend-item">
+          <span class="legend-dot filled"></span>
+          Required, needed before we can start
+        </div>
+        <div class="legend-item muted">
+          <span class="legend-dot outline"></span>
+          If available, bring what you have
+        </div>
+      </div>
+
+      <!-- BRAND ASSETS -->
+      <div class="checklist-section">
+        <span class="label-section">Brand Assets</span>
+        <div class="checklist-items">
+
+          <label class="checklist-item">
+            <input type="checkbox" name="brand_assets[]" value="Logo files">
+            <div class="checklist-item-body">
+              <span class="item-label">Logo files</span>
+              <span class="item-help">SVG and PNG, on light and dark backgrounds</span>
+            </div>
+            <span class="badge">Required</span>
+          </label>
+
+          <label class="checklist-item optional">
+            <input type="checkbox" name="brand_assets[]" value="Brand colors">
+            <div class="checklist-item-body">
+              <span class="item-label">Brand colors</span>
+              <span class="item-help">Hex codes or Pantone references</span>
+            </div>
+            <span class="badge optional">If available</span>
+          </label>
+
+          <label class="checklist-item optional">
+            <input type="checkbox" name="brand_assets[]" value="Brand fonts">
+            <div class="checklist-item-body">
+              <span class="item-label">Brand fonts</span>
+              <span class="item-help">Font names, license files, or purchase links</span>
+            </div>
+            <span class="badge optional">If available</span>
+          </label>
+
+        </div>
+      </div>
+
+      <!-- COPY AND TEXT -->
+      <div class="checklist-section">
+        <span class="label-section">Copy and Text</span>
+        <div class="checklist-items">
+
+          <label class="checklist-item">
+            <input type="checkbox" name="copy[]" value="About / Bio text">
+            <div class="checklist-item-body">
+              <span class="item-label">About / Bio text</span>
+              <span class="item-help">Your story, credentials, what makes you you</span>
+            </div>
+            <span class="badge">Required</span>
+          </label>
+
+          <label class="checklist-item">
+            <input type="checkbox" name="copy[]" value="Services list with descriptions">
+            <div class="checklist-item-body">
+              <span class="item-label">Services list with descriptions</span>
+              <span class="item-help">What you offer, pricing if public, who it is for</span>
+            </div>
+            <span class="badge">Required</span>
+          </label>
+
+          <label class="checklist-item optional">
+            <input type="checkbox" name="copy[]" value="Testimonials or social proof">
+            <div class="checklist-item-body">
+              <span class="item-label">Testimonials or social proof</span>
+              <span class="item-help">Client quotes, press mentions, review screenshots</span>
+            </div>
+            <span class="badge optional">If available</span>
+          </label>
+
+          <label class="checklist-item optional">
+            <input type="checkbox" name="copy[]" value="Existing copy you want to keep">
+            <div class="checklist-item-body">
+              <span class="item-label">Existing copy you want to keep</span>
+              <span class="item-help">Taglines, mission statements, specific phrasing</span>
+            </div>
+            <span class="badge optional">If available</span>
+          </label>
+
+        </div>
+      </div>
+
+      <!-- PHOTOS AND MEDIA -->
+      <div class="checklist-section">
+        <span class="label-section">Photos and Media</span>
+        <div class="checklist-items">
+
+          <label class="checklist-item">
+            <input type="checkbox" name="photos[]" value="Professional photos">
+            <div class="checklist-item-body">
+              <span class="item-label">Professional photos</span>
+              <span class="item-help">Portraits, team, studio, product. Full resolution only.</span>
+            </div>
+            <span class="badge">Required</span>
+          </label>
+
+        </div>
+      </div>
+
+      <!-- TECHNICAL ACCESS -->
+      <div class="checklist-section">
+        <span class="label-section">Technical Access</span>
+        <div class="checklist-items">
+
+          <label class="checklist-item">
+            <input type="checkbox" name="technical[]" value="Domain name and registrar login">
+            <div class="checklist-item-body">
+              <span class="item-label">Domain name and registrar login</span>
+              <span class="item-help">Where your domain is registered and access credentials</span>
+            </div>
+            <span class="badge">Required</span>
+          </label>
+
+          <label class="checklist-item">
+            <input type="checkbox" name="technical[]" value="Hosting account access">
+            <div class="checklist-item-body">
+              <span class="item-label">Hosting account access</span>
+              <span class="item-help">cPanel, admin panel, or hosting provider login</span>
+            </div>
+            <span class="badge">Required</span>
+          </label>
+
+          <label class="checklist-item optional">
+            <input type="checkbox" name="technical[]" value="Existing website backup or export">
+            <div class="checklist-item-body">
+              <span class="item-label">Existing website backup or export</span>
+              <span class="item-help">If redesigning, a backup before we touch anything</span>
+            </div>
+            <span class="badge optional">If redesigning</span>
+          </label>
+
+        </div>
+      </div>
+
+      <!-- Note -->
+      <div class="checklist-note">
+        <h3>Do not have everything yet?</h3>
+        <p>That is fine. Send what you have and we will align on the gaps in our kickoff call. Missing items will not delay the start.</p>
+      </div>
+
+      <!-- Continue -->
+      <div class="submit-row" style="margin-top: 32px;">
+        <div class="submit-row-text">
+          <h3>Ready for the next step?</h3>
+          <p>Once you have gathered what you can, continue to the deposit payment.</p>
+        </div>
+        <a href="payment.html" class="btn btn-dark btn-lg">Continue to payment →</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span class="footer-text">Roni Margolin · hello@ronimargolin.com · ronimargolin.com</span>
+    </div>
+  </footer>
+
+</body>
+</html>
