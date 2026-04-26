@@ -744,36 +744,19 @@ form { width: 100%; }
   border-radius: var(--radius);
 }
 
-.checklist-item input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  margin: 0;
-  flex-shrink: 0;
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1.5px solid var(--border);
-  border-radius: 3px;
-  background: var(--bg);
-  position: relative;
-  cursor: pointer;
-  transition: background 0.15s, border-color 0.15s;
-}
-
-.checklist-item input[type="checkbox"]:checked {
+.checklist-item .item-marker {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
   background: var(--ink);
-  border-color: var(--ink);
+  flex-shrink: 0;
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
-.checklist-item input[type="checkbox"]:checked::after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 5px;
-  width: 5px;
-  height: 9px;
-  border: solid var(--dark-ink);
-  border-width: 0 1.5px 1.5px 0;
-  transform: rotate(45deg);
+.checklist-item.optional .item-marker {
+  background: var(--bg);
+  border: 1.5px solid var(--stone);
 }
 
 .checklist-item-body {
