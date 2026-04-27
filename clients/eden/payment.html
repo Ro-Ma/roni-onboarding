@@ -7,6 +7,16 @@
   <meta name="robots" content="noindex, nofollow">
   <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="../../style.css">
+  <style>
+    .transfer-fields-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 12px;
+    }
+    @media (max-width: 900px) { .transfer-fields-3 { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .transfer-fields-3 { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
 
@@ -36,14 +46,14 @@
       <!-- Deposit card -->
       <div class="deposit-card">
         <div class="deposit-half">
-          <span class="deposit-half-label">Deposit Due Now</span>
-          <div class="deposit-amount">€1,443</div>
-          <div class="deposit-meta">30% of total project fee · Due to confirm schedule</div>
+          <span class="deposit-half-label">First Payment — Due Now</span>
+          <div class="deposit-amount">€2,705</div>
+          <div class="deposit-meta">50% of total · Confirms your start date</div>
         </div>
         <div class="deposit-half right">
           <span class="deposit-half-label">Total Project Fee</span>
-          <div class="deposit-amount">€4,810</div>
-          <div class="deposit-meta">50% at build completion · 20% on launch</div>
+          <div class="deposit-amount">€5,410</div>
+          <div class="deposit-meta">Includes all four sub-brands · Balance due on delivery</div>
         </div>
       </div>
 
@@ -51,46 +61,37 @@
       <section class="section">
         <span class="label-section">How To Pay · Wise Transfer</span>
 
-        <div class="transfer-fields">
+        <div class="transfer-fields-3">
           <div class="transfer-field">
             <div class="field-label">Account Name</div>
             <div class="field-value">Roni Margolin</div>
           </div>
           <div class="transfer-field">
             <div class="field-label">Wise Email</div>
-            <div class="field-value">ronimargolin@gmail.com</div>
+            <div class="field-value" style="font-size: 12px; word-break: break-all;">ronimargolin@gmail.com</div>
           </div>
           <div class="transfer-field">
             <div class="field-label">Currency</div>
             <div class="field-value">EUR</div>
             <span class="field-meta">Send in Euros</span>
           </div>
-          <div class="transfer-field">
-            <div class="field-label">Reference</div>
-            <div class="field-value">Hayley Hopkins Deposit</div>
-          </div>
         </div>
       </section>
 
       <!-- Payment structure -->
       <section class="section">
-        <span class="label-section">Payment Structure</span>
+        <span class="label-section">Payment Schedule</span>
 
-        <div class="after-transfer">
+        <div class="after-transfer" style="grid-template-columns: 1fr 1fr;">
           <div class="after-transfer-step">
-            <span class="after-transfer-num">30%</span>
-            <h3>€1,443 — Now</h3>
+            <span class="after-transfer-num">50%</span>
+            <h3>€2,705 — Now</h3>
             <p>Deposit on signing. Confirms your start date and secures your spot in the schedule.</p>
           </div>
           <div class="after-transfer-step">
             <span class="after-transfer-num">50%</span>
-            <h3>€2,405 — At build completion</h3>
-            <p>Due when design and build are complete and the site is ready for your final review.</p>
-          </div>
-          <div class="after-transfer-step">
-            <span class="after-transfer-num">20%</span>
-            <h3>€962 — On launch</h3>
-            <p>Final payment on the day the site goes live. Project fully delivered.</p>
+            <h3>€2,705 — On delivery</h3>
+            <p>Due when the project is complete, tested, and ready to go live.</p>
           </div>
         </div>
       </section>
