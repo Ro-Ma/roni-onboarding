@@ -34,18 +34,26 @@
       </section>
 
       <!-- Tally embed -->
-      <!-- RONI: Replace the src URL below after duplicating the Tally form per EDEN-TALLY-FORM-SPEC.md -->
       <div class="tally-embed-wrap">
         <iframe
+          id="tally-iframe"
           src="https://tally.so/embed/ZjG11e?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
           width="100%"
-          height="800"
           frameborder="0"
           marginheight="0"
           marginwidth="0"
-          title="Project Questions — Eden">
+          title="Project Questions — Eden"
+          style="height: 800px; overflow: hidden;">
         </iframe>
       </div>
+      <script>
+        window.addEventListener('message', function(e) {
+          if (e.data && e.data.type === 'tally-height') {
+            var iframe = document.getElementById('tally-iframe');
+            if (iframe) iframe.style.height = e.data.height + 'px';
+          }
+        });
+      </script>
 
       <!-- Continue -->
       <div class="submit-row" style="margin-top: 32px;">
